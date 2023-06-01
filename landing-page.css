@@ -1,0 +1,151 @@
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.container{
+    border:1px solid rgba(154, 155, 159, 0.956);
+    padding:15px;
+    margin:auto;
+    max-width: 800px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    margin:30px;
+    margin-bottom:40px;
+}
+.header-img img{
+    width:100px;
+    height:100px;
+    border-radius: 80%;
+    border:2px solid rgb(145, 126, 18);
+}
+.header-img{
+    background-color: purple;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    margin-right:30px;
+}
+.instuctions h1{
+    margin:0;
+    padding:0;
+}
+
+.student-information{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;;
+}
+
+.student-information input{
+    margin:0 20px 20px 0;
+}
+
+.address {
+    display:flex;
+    flex-direction: column;
+    margin-bottom:20px;
+}
+.address input{
+    margin:0 20px 20px 0;
+}
+input{
+    padding:7px;
+}
+h2{
+    margin:0 0 10px 0;
+}
+
+#submit{
+    background-color: rgb(17, 78, 210);
+    width:100%;
+    color:white;
+    border:none;
+    padding:15px;
+    margin-top: 20px;;
+}
+
+.contact-information{
+    margin-bottom: 20px;
+}
+
+.contact-information input{margin:0 20px 0 0;}
+
+#email{margin-bottom: 20px;}
+
+.si{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+@media screen and (max-width:700px) {
+    .header{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .si{
+        display: flex;
+        flex-direction: column;
+    }
+    .drops{
+        flex-direction: column;
+    }
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.drops{
+    display: flex;
+    flex-direction: row;
+    justify-content: safe;
+    border-bottom:2px solid;
+    margin-bottom:20px;
+    width: 100%;
+}
+.actionicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border:1px solid;
+    padding:5px;
+    width:100%;
+}
+.addcontainer{
+    border-bottom: none;
+}
+.dropdivs{
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    width:50%;
+}
+@media screen and (max-width:547px){
+    .drops{
+        flex-direction: column;
+        box-sizing:border-box;
+    }
+    .dropdivs{
+        width:100%;
+    }
+    .actionicon{
+        margin:0;
+        width:300px;
+    }
+}
+@media screen and (max-width :226px){
+    .dropdivs{
+        flex-direction:column;
+        width:100%
+    }
+    .actionicon{
+        width:auto;
+    }
+}

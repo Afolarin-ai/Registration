@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="landing-page.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    </head>
+  <body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="header-img">    
+                    <img src="./assets/battery-8-256.jpg" alt="a logo">
+                </div>
+                <div class="instructions">
+                    <h1>
+                        Student Registration <Form:post></Form:post>
+                    </h1>
+                    <p>
+                        Fill out the form to apply to apply for the training courses. You can consider your application accepted after you receive a confirmation email.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <form action="">
+            <h2>
+                Student Information
+            </h2>
+            <div class="student-information">
+                <div class="si">
+                    <input class="fname" type="text" name="fname" id="fname" placeholder="First Name" required>
+                    <input type="text" name="mname" id="mname" placeholder="Middle Name" required>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                </div>
+                <div class=si>
+                    <input class="date" type="date" name="DOB" id="DOB" required>    
+                    <input type="text" name="student-id" id="stu-id" 
+                    placeholder="Student ID" required>
+                    
+                </div>
+            </div>
+            <h2>
+                Address
+            </h2>
+            
+            <div class="address shrink">
+                <div class="si">
+                    <input class="streetaddress" type="text" name="street-address" id="street-address" placeholder="Street Address" required>
+                </div>
+                <div class="si">
+                    <input class="city" type="text" name="city" id="city" placeholder="City" required>
+                    <input class="sp" type="text" name="state-province" id="state-province" placeholder="State/Province" required>
+                </div>
+                <div class="si">
+                    <input class="country" type="text" name="country" id="country" placeholder="Country" required>
+                    <input type="number" name="zipcode" id="zipcode" required placeholder="Zip Code">
+                </div>
+            </div>
+            <h2>Contact Information</h2>
+            <div class="contact-information si">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input style="margin-bottom: 20px;" type="text" name="" id="">
+            </div>
+            <h2>Courses <span style="color:red;">*</span></h2>
+            <div class="comments">
+                <div class="addcontainer">
+                    <div style="padding:5px; display: block; padding-left:none; border:1px solid">
+                        <button type="button">+ Add new record</button>
+                    </div>
+                    <div class="drops">
+                        <div class="dropdivs">
+                            <div class="actionicon">
+                                <div>
+                                    Course
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
+                                </div>
+                            </div>
+                            <div class="actionicon">
+                                <div>Level</div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdivs">
+                            <div class="actionicon">
+                                <div>
+                                    Language
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
+                                </div>
+                            </div>
+                            <div class="actionicon">
+                                <div>
+                                    Start Date
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="si">
+                <textarea  name="" id="" cols="30" rows="10" placeholder="Comments"></textarea>
+            </div>
+            <button id="submit" type="submit">SEND REQUEST</button>
+        </form>
+    </div>
+  </body>
+</html>
