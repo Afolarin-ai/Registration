@@ -3,6 +3,7 @@ body{
     margin:0;
     box-sizing: border-box;
     font-family: 'Hanken Grotesk', sans-serif;
+    background-color: red;
 }
 .container{
     border:1px solid rgba(154, 155, 159, 0.956);
